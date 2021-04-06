@@ -132,8 +132,121 @@ img {
   }
   
   img {
+    width: auto;
     height: 120px;
     padding-top: 20px;
+  }
+  
+}
+
+/* Inizio mia proposta di pagina responsive per i tablet */
+
+@media screen and (min-width: 421px) and (max-width: 769px) {
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .row {
+    width: 100%;
+    margin: auto;
+    margin-top: 0px;
+    padding-top: 5px;
+  }
+  
+  /* BLOCCO LEZIONI */
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 45%;
+    float: left;
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  #lezioni .left {
+    margin: 0 calc(10%/3) 0 calc(10%/3);
+  }
+  #lezioni .right {
+    margin: 0 calc(10%/3) 0 0;
+  }
+  #lezioni .row img {
+    /* per centrare orizzontalmente */
+    display: block;
+    margin: 0 auto 0 auto;
+  }
+  #lezioni {
+    text-align: center;
+    background-color: #F2F2CD;
+    padding-bottom: 20px;
+  }
+  
+  /* BLOCCO STEPS */
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: left;
+    width: 45%;
+    margin-top: 30px;
+    padding: 10px;
+  }
+  #steps .left {
+    margin: 0 calc(10%/3) 0 calc(10%/3);
+  }
+  #steps .central {
+    margin: 0 calc(10%/3) 0 0;
+  }
+  
+  #steps .right {
+    margin: 0 calc(55% / 2) 0 calc(55% / 2);
+  }
+  
+  #steps {
+    text-align: center;
+    padding: 10px 0 10px 0;
+  }
+  
+  /* BLOCCO PERCHE */
+  #why {
+    text-align: center;
+    background-color: #F2F2CD;
+    padding-top: 10px;
+  }
+  
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: calc(100% / 3);
+    float: left;
+    margin-top: 0px;
+    padding: 30px 10px 10px 10px;
+  }
+  
+  #why .row img {
+    background-color: #428bca;
+    border-radius: 50%;
+    padding: 30px;
+  }
+  #why hr {
+    display: none;
+  }
+  
+  /* COMMON */
+  .row::after, #why::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  .container.grey {
+    background-color: #f9f9f9;
+  }
+  
+  img {
+    width: 60%;
+    height: auto;
+    padding-bottom: 10px;
   }
   
 }
